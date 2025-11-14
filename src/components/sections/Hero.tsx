@@ -1,5 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ArrowRight, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile.png';
 
@@ -77,20 +77,6 @@ export const Hero = () => {
               size="lg"
             >
               {t('hero_contact')}
-            </Button>
-            <Button 
-              asChild
-              variant="secondary"
-              size="lg"
-            >
-              <a 
-                href="/cv-amazzar-kaoutar.pdf" 
-                download
-                className="group"
-              >
-                <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-                {t('hero_download_cv')}
-              </a>
             </Button>
           </div>
 

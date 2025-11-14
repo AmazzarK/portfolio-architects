@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Navigation = () => {
@@ -57,7 +58,10 @@ export const Navigation = () => {
             ))}
           </div>
           
-          <LanguageSwitcher />
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </nav>

@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import profileImage from '@/assets/profile.png';
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -16,6 +17,20 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative pt-20">
       <div className="container mx-auto px-6 z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Profile Image */}
+          <div className="flex justify-center mb-8 animate-fade-in-up">
+            <div className="relative">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-foreground shadow-hard">
+                <img 
+                  src={profileImage} 
+                  alt="Amazzar Kaoutar - Software Engineer"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full border-4 border-foreground animate-pulse opacity-20" />
+            </div>
+          </div>
+
           {/* Name with glitch effect */}
           <div className="space-y-2">
             <div className="inline-block">

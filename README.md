@@ -1,70 +1,148 @@
-# Amazzar Kaoutar - Portfolio
+# Kaoutar Amazzar - Portfolio
 
-A premium black & white monospaced portfolio showcasing my work as a Software Engineer, featuring elegant 3D animations and multilingual support.
+A modern, minimalist portfolio showcasing my work as a Full-Stack Software Engineer with 6+ years of experience. Built with a premium black & white monospaced design system featuring elegant animations and multilingual support.
 
-## Features
+![Portfolio Preview](https://img.shields.io/badge/Live-Portfolio-black?style=for-the-badge)
 
-- 🎨 Premium black & white monospaced design
-- 🌍 Multilingual support (English, French, German)
-- 🎭 Subtle 3D animations and parallax effects
-- 📱 Fully responsive design
-- ⚡ Built with React, TypeScript, and Vite
-- 🎯 Optimized performance
+## ✨ Features
 
-## Getting Started
+- 🎨 **Premium Design System** - Clean black & white monospaced aesthetic with hard shadows
+- 🌍 **Multilingual Support** - Available in English, French, and German
+- ✨ **Rich Animations** - Smooth entrance animations, hover effects, and floating geometric shapes
+- 📱 **Fully Responsive** - Optimized for all devices and screen sizes
+- ⚡ **High Performance** - Built with Vite for lightning-fast load times
+- 🎯 **SEO Optimized** - Proper meta tags and semantic HTML
+- 🌙 **Theme Toggle** - Light/Dark mode support
+- 📄 **Multi-language CV** - Downloadable CVs in English, French, and German
 
-Clone the repository and start the development server:
+## 🚀 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS with custom design tokens
+- **UI Components:** shadcn/ui (Radix UI primitives)
+- **Icons:** Lucide React
+- **Fonts:** JetBrains Mono (monospaced)
+- **State Management:** React Context API
+- **Form Handling:** React Hook Form with Zod validation
 
-Follow these steps:
+## 📂 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```
+portfolio-architects/
+├── public/
+│   ├── cv-en.pdf           # English CV
+│   ├── cv-fr.pdf           # French CV
+│   ├── cv-de.pdf           # German CV
+│   ├── favicon.ico         # Site favicon
+│   └── robots.txt          # SEO robots file
+├── src/
+│   ├── assets/             # Images and static files
+│   ├── components/
+│   │   ├── sections/       # Page sections (Hero, About, Skills, etc.)
+│   │   └── ui/             # Reusable UI components
+│   ├── contexts/           # React contexts (Language, Theme)
+│   ├── data/               # Content and translations
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Utility functions
+│   └── pages/              # Page components
+└── index.html              # Entry HTML file
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠️ Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerequisites
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- Node.js 18+ and npm (recommended: [install with nvm](https://github.com/nvm-sh/nvm))
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AmazzarK/portfolio-architects.git
+
+# Navigate to project directory
+cd portfolio-architects
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Customization
 
-## What technologies are used for this project?
+### Updating Content
 
-This project is built with:
+Edit the content in `src/data/content.ts` to customize:
+- Personal information
+- Work experience
+- Projects
+- Skills
+- Education
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Changing Colors
 
-## How can I deploy this project?
+The color system is defined in `src/index.css` using CSS custom properties. Modify the `:root` and `.dark` selectors to adjust the color palette.
 
-Simply open [Lovable](https://lovable.dev/projects/be6c4da1-e42b-4c4c-a792-7dad82d48c60) and click on Share -> Publish.
+### Adding/Removing Languages
 
-## Can I connect a custom domain to my Lovable project?
+Update the `LanguageContext.tsx` and add translations in `src/data/content.ts`.
 
-Yes, you can!
+## 📝 Portfolio Sections
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Hero** - Introduction with profile image and CTAs
+- **About** - Personal background and statistics
+- **Skills** - Technical skills organized by category
+- **Experience** - Professional work history with timeline
+- **Education** - Academic background
+- **Projects** - Portfolio of key projects
+- **Contact** - Contact information and language proficiencies
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🎭 Animation Features
+
+- Fade-in animations on scroll
+- Staggered entrance effects
+- Floating geometric background shapes
+- Smooth hover transitions
+- 3D transform effects
+- Bounce and zoom animations
+
+## 🌐 Deployment
+
+This project can be deployed to any static hosting service:
+
+- **Vercel** - `npm run build` then deploy `dist` folder
+- **Netlify** - Connect GitHub repo for automatic deployments
+- **GitHub Pages** - Use GitHub Actions for deployment
+
+## 📄 License
+
+This project is open source and available for personal use.
+
+## 👤 Author
+
+**Kaoutar Amazzar**
+- GitHub: [@AmazzarK](https://github.com/AmazzarK)
+- LinkedIn: [amazzarkaoutar](https://linkedin.com/in/amazzarkaoutar)
+- Email: amazzar.consult@gmail.com
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
+- [Lucide](https://lucide.dev/) for the icon system
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+
+

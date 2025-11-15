@@ -1,22 +1,19 @@
-# Welcome to your Lovable project
+# Amazzar Kaoutar - Portfolio
 
-## Project info
+A premium black & white monospaced portfolio showcasing my work as a Software Engineer, featuring elegant 3D animations and multilingual support.
 
-**URL**: https://lovable.dev/projects/be6c4da1-e42b-4c4c-a792-7dad82d48c60
+## Features
 
-## How can I edit this code?
+- 🎨 Premium black & white monospaced design
+- 🌍 Multilingual support (English, French, German)
+- 🎭 Subtle 3D animations and parallax effects
+- 📱 Fully responsive design
+- ⚡ Built with React, TypeScript, and Vite
+- 🎯 Optimized performance
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/be6c4da1-e42b-4c4c-a792-7dad82d48c60) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Clone the repository and start the development server:
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 

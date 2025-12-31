@@ -1,3 +1,8 @@
+# React Router Configuration for Hostinger
+# This ensures client-side routing works correctly.
+# All non-file requests are redirected to index.html.
+# Works for both root-level and subdirectory deployments.
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /

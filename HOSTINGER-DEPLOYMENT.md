@@ -126,22 +126,11 @@ This is **critical** for Hostinger deployment because:
 
 ### React Router Configuration
 
-The app uses `BrowserRouter` which requires proper server configuration. If you encounter 404 errors on page refresh:
+The app uses `BrowserRouter` which requires proper server configuration. The `.htaccess` file is automatically included in the build output (located in `public/.htaccess` and copied to `dist/.htaccess` during build).
 
-1. Create a `.htaccess` file in `public_html`:
+This file ensures all routes are handled by `index.html` (client-side routing), so refreshing pages like `/about` or `/projects` will work correctly instead of showing a 404 error.
 
-```apache
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
-</IfModule>
-```
-
-2. This ensures all routes are handled by `index.html` (client-side routing)
+**Note**: The `.htaccess` file is already included when you upload the `dist/` folder contents, so you don't need to create it manually.
 
 ## Troubleshooting
 

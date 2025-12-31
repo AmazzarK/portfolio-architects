@@ -43,16 +43,10 @@ export default defineConfig(() => ({
 ```
 
 ### 3. .htaccess (in public/ folder, copied to dist/)
-```apache
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
-</IfModule>
-```
+
+This file is automatically included in the build and copied to the dist/ folder. It configures Apache to support React Router's client-side routing by redirecting all non-file requests to index.html.
+
+See the actual file at `public/.htaccess` for the configuration.
 
 **Purpose**: Ensures React Router works correctly by redirecting all requests to index.html
 

@@ -1,0 +1,19 @@
+# React Router Configuration for Hostinger
+# This ensures client-side routing works correctly.
+# All non-file requests are redirected to index.html.
+#
+# This configuration works for:
+# - Root-level deployment (yourdomain.com/)
+# - Subdirectory deployment (yourdomain.com/subdir/)
+#
+# For subdirectory deployment, the RewriteBase stays as "/" because
+# Apache interprets it relative to the .htaccess location.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

@@ -124,9 +124,24 @@ Update the `LanguageContext.tsx` and add translations in `src/data/content.ts`.
 
 This project can be deployed to any static hosting service:
 
+- **Hostinger** - See [HOSTINGER-DEPLOYMENT.md](./HOSTINGER-DEPLOYMENT.md) for detailed instructions
 - **Vercel** - `npm run build` then deploy `dist` folder
 - **Netlify** - Connect GitHub repo for automatic deployments
 - **GitHub Pages** - Use GitHub Actions for deployment
+
+### Quick Hostinger Deployment
+
+```bash
+# Install dependencies
+npm install
+
+# Build for production
+npm run build
+
+# Upload contents of dist/ folder to public_html on Hostinger
+```
+
+For detailed Hostinger deployment instructions, including troubleshooting and configuration, see [HOSTINGER-DEPLOYMENT.md](./HOSTINGER-DEPLOYMENT.md).
 
 ## 📄 License
 
